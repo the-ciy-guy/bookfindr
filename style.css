@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1, p, a {
+    color: #333;
+    text-decoration: none;
+}
+
+h1, h2 {
+    font-family: 'Bebas Neue', cursive;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+}
+
+/* .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+h1 {
+    text-align: center;
+    margin: 20px 0 20px 0;
+    letter-spacing: 1px;
+}
+
+.search_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search_form input {
+    width: 90%;
+    height: 50px;
+    padding: 0 10px 0 10px;
+    font-size: 1.2em;
+    border-radius: 10px;
+}
+
+.search_form :focus {
+    border: 2px solid #99009c;
+}
+
+ul {
+    list-style: none;
+    margin-top: 20px;
+    display: block;
+}
+
+li {
+    margin: 20px 10px 20px 10px;
+    border: 1px solid #99009c;
+}
+
+li a {
+    display: grid;
+    grid-template-areas: "left right";
+    gap: 10px;
+}
+
+.grid_one {
+    grid-area: left;
+}
+
+.grid_two {
+    grid-area: right;
+}
+
+li a p {
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+@media(min-width: 1000px) {
+    .container {
+        margin: 0 auto;
+        width: 90%;
+        max-width: 1240px;
+    }
+
+    .book_list {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 20px;
+    }
+
+    li:hover {
+        border: 2px solid;
+        box-shadow: 5px 10px 18px #99009c;
+    }
+}
