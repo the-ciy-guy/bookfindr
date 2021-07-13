@@ -1,7 +1,6 @@
 const input = document.getElementById('book_input');
 input.addEventListener('keyup', (e) => {
     const searchString = e.target.value.toLowerCase(); // get input value
-    // console.log(searchString);
     fetch(`https://www.googleapis.com/books/v1/volumes?q=${searchString}`)
     .then(book => book.json())
     .then(response => {
